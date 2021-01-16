@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 12</title>
+
+    <script>
+
+        var pos,msg,pontos;
+        pontos = 1000;
+
+        if(pontos >= 1000){
+            pos=1;
+        }else if (pontos >=800){
+            pos=2;
+        }else if (pontos >=600){
+            pos=3;
+        }else {
+            pos=0;
+        }
+
+        switch(pos){
+            case 1:
+            msg="primeiro lugar <br> Medalha de ouro";
+            break;
+            case 2:
+            msg="segndo lugar<br> Medalha de prata";
+            break;
+            case 3:
+            msg="terceiro lugar<br> medalha de bronze";
+            break;
+            default:
+            msg="não foi ao pódio<br> não recebeu medalha";
+
+        }
+
+        switch(pos){
+            case 1:
+            case 2:
+            case 3:
+            msg+="<br> subiu ao pódio";
+            break;
+            default:
+            msg+="<br>Não obteve colocação";
+        }
+        document.write(msg);
+
+    </script> 
+</head>
+<body>
+    
+</body>
+</html>
