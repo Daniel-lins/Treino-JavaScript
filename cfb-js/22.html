@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 22</title>
+    <script> 
+    var num;//nota maxima
+
+    try{
+        num=prompt("digite um valor");
+        if(num>10){
+            throw new error("valor invalido, o valor máximo é 10");
+        }
+
+    } catch(e){
+        console.log("ERRO: "+ e.message);
+        num=10;
+    }finally{
+        document.write("valor: " +num);
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
