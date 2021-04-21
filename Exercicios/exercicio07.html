@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercicio 07</title>
+</head>
+<body>
+    <h1>DIGITE 3 NÚMEROS</h1>
+    <input id="num1" type="number">
+    <input id="num2" type="number">
+    <input id="num3" type="number">
+    <button onclick="menor()">CONFIRMAR</button>
+
+    <script>
+var num1 = parseFloat(document.getElementById("num1").value);
+var num2 = parseFloat(document.getElementById("num2").value);
+var num3 = parseFloat(document.getElementById("num3").value);
+
+
+
+function menor(){
+
+var num1 = parseFloat(document.getElementById("num1").value);
+var num2 = parseFloat(document.getElementById("num2").value);
+var num3 = parseFloat(document.getElementById("num3").value);
+
+
+if ((num1<num2)&&(num1<num3)){
+    alert(num1 + " é o menor número");
+    }
+
+else
+    if((num2<num1)&&(num2<num3)){
+        alert(num2 + " é o menor número");
+    }
+    if((num3<num2)&&(num3<num1)){
+        alert(num3 + "é o menor número");
+    }
+}
+
+
+</script>
+    
+</body>
+</html>

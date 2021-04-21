@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 09</title>
+</head>
+<body>
+    <H1>DIGITE 3 NÚMEROS ABAIXO</H1>
+    <input id="num1" type="number">
+    <input id="num2" type="number">
+    <input id="num3" type="number">
+
+    <button onclick="decrescente()">CONFIRMAR</button>
+
+    <script>
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var num3 = parseFloat(document.getElementById("num3").value);
+
+    function decrescente() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var num3 = parseFloat(document.getElementById("num3").value);
+
+
+    if ((num1>num2)&&(num1>num3)&&(num2>num3)) {
+        document.write(num1,num2,num3)
+    }
+    else
+        if((num1>num2)&&(num1>num3)&&(num3>num2)){
+            document.write(num1,num3,num2);
+        }
+        if((num2>num1)&&(num2>num3)&&(num1>num3)){
+            document.write(num2,num1,num3);
+        }
+        if((num2>num1)&&(num2>num3)&&(num3>num1)){
+            document.write(num2,num3,num1);
+        }
+        if((num3>num1)&&(num3>num2)&&(num2>num1)){
+            document.write(num3,num2,num1);
+
+        }
+        if((num3>num1)&&(num3>num2)&&(num1>num2)){
+            document.write(num3,num1,num2);
+        }
+
+    
+    }
+
+    </script>
+    
+
+    
+</body>
+</html>

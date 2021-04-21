@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 08</title>
+</head>
+<body>
+<h1>QUAL O PREÇO DOS PRODUTOS ABAIXO ?</h1>
+
+<p>R$<input id="produto1" type="number"></p>
+<P>R$<input id="produto2" type="number"></P>
+<P>R$<input id="produto3" type="number"></P>
+<button onclick="barato()">Confirmar</button>
+
+<script>
+var num1 = parseFloat(document.getElementById("produto1").value);
+var num2 = parseFloat(document.getElementById("produto2").value);
+var num3 = parseFloat(document.getElementById("produto3").value);
+
+function barato() {
+var num1 = parseFloat(document.getElementById("produto1").value);
+var num2 = parseFloat(document.getElementById("produto2").value);
+var num3 = parseFloat(document.getElementById("produto3").value);
+
+if ((num1<num2)&&(num1<num3)) {
+    alert("R$" + num1 + " é o melhor preço");
+}
+else 
+    if ((num2<num1)&&(num2<num3)) {
+        alert("R$" + num2 + " é o melhor preço");
+
+    }
+    if ((num3<num1)&&(num3<num2)) {
+        alert("R$" + num3 + " é o melhor preço");
+    }
+    }
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 11</title>
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <h1>QUAL SEU SALÁRIO ?</h1>
+    <input id="salario" type="number">
+    <button onclick="calc()">CONFIRMAR</button>
+
+    <script> 
+    var salario1 = parseFloat(document.getElementById("salario").value)
+
+    function calc() {
+    var salario1 = parseFloat(document.getElementById("salario").value)
+
+    if (salario1 <= 280) {
+        alert((salario1*(20/100)+salario1));
+    }
+    else 
+        if((salario1>280)&&((salario1<=700))) {
+            alert((salario1*(15/100)+salario1));
+        }
+        if((salario1>700)&&(salario1<=1500)) {
+            alert((salario1*(10/100)+salario1));
+        }
+        if(salario1>1500) {
+            alert((salario1*(5/100)+salario1));
+        }
+ 
+
+
+    }
+    </script>
+</body>
+</html>

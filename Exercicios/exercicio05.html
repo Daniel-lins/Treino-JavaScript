@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercicio 05</title>
+</head>
+<body>
+    <h1>Qual sua nota ? </h1><br>
+    <p>digite abaixo</p>
+    <input id="nota1" type="number">
+    <input id="nota2" type="number">
+    <button onclick="media()">Confirmar</button>
+</body>
+<script>
+var nota1 = parseFloat(document.getElementById("nota1").value);
+var nota2 = parseFloat(document.getElementById("nota2").value);
+
+
+function media(){
+var nota1 = parseFloat(document.getElementById("nota1").value);
+var nota2 = parseFloat(document.getElementById("nota2").value);
+
+var calc = (nota1 + nota2) / 2;
+
+if((calc >=7)&(calc <10)) {
+    alert("vocÊ foi aprovado");
+}
+else
+    if(calc == 10){
+        alert("aprovado com distinção");
+    }
+    if(calc <7){
+        alert("você foi reprovado");
+    }
+}
+
+</script>
+</html>

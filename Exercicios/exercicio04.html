@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<input id="letra" type="text">
+<button onclick="verificador()">verificar</button>
+    
+<script>
+var letrao = String(document.getElementById("letra").value)
+
+function verificador() {
+var letrao = String(document.getElementById("letra").value)
+if ((letrao == "a") || (letrao =="e") || (letrao =="o") || (letrao =="u")|| (letrao =="i")){
+
+alert("é uma vogal");
+}
+else
+    alert("É uma consoante")
+}
+
+</script>
+</body>
+</html>

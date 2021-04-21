@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>exercício 10</title>
+    <style>
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    </style>
+</head>
+<body>
+    <h1>Qual turno você estuda?</h1>
+    <p>sendo M-matutino ou V-vespertino ou N-noturno</p>
+    <p>digite abaixo:</p>
+    <input id="turno1" type="text">
+    
+    <button onclick="turno()">CONFIRMAR</button>
+
+    <script>
+    var turno1 = String(document.getElementById("turno1").value);
+
+
+    function turno(){
+    var turno1 = String(document.getElementById("turno1").value);
+    
+
+if(turno1 == "M"){
+    alert("você estuda de manhã");
+}
+else
+    if(turno1 == "T"){
+        alert("você estuda de tarde");
+    }
+    if(turno1 == "N"){
+        alert("você estuda de noite");
+    }
+
+
+    }
+    </script>
+    
+</body>
+</html>
