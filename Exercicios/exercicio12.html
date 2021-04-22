@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 12</title>
+</head>
+<body>
+<h1>CALCULADORA DE PAGAMENTOS </h1>
+<P> valor hora de trabalho </P>
+<input id="horat" type="number">
+<p>quantida de de horas trabalhadas </p>
+<input id="quanthora" type="number">
+<button onclick="calc()">Confirmar</button>
+     
+
+
+<script> 
+var horat = parseFloat(document.getElementById("horat").value)
+var quanthora = parseFloat(document.getElementById(quanthora).value)
+
+function calc () {
+    var horat = parseFloat(document.getElementById("horat").value)
+    var quanthora = parseFloat(document.getElementById(quanthora).value)
+
+var salariobruto =  horat + quanthora
+var inss = (salariobruto*11)/100
+
+if (salariobruto>=1500){
+    alert(inss)
+
+}
+
+}
+
+
+</script>
+</body>
+</html>
